@@ -1,0 +1,46 @@
+https://leetcode.com/problems/roman-to-integer/
+
+Explicacion =
+
+    - Numeros por defecto valor 0, por si hay solo 2 letras romanas.
+
+// Intro suma con parametros
+
+const I = 1;
+const V = 5;
+const X = 10;
+const L = 50;
+const C = 100;
+const D = 500;
+const M = 1000;
+
+const s = ["I", "V", "X", "L", "C", "D", "M"];
+
+function romanToInteger(
+num1 = 0,
+num2 = 0,
+num3 = 0,
+num4 = 0,
+num5 = 0,
+num6 = 0,
+num7 = 0,
+num8 = 0
+) {
+return (suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8);
+}
+
+console.log(romanToInteger(M, L, I, I, I, I));
+
+// Index 0 palabra romanos
+const a = "romanos";
+
+const index = " El indice 0 de Romanos es : " + a.charAt(0);
+
+console.log(index);
+
+// Regex
+
+let patente = prompt("Ingrese una patente");
+let patron = /[a-z]{2}[0-9]{3}[a-z]{2}/;
+if (patron.test(patente)) alert("La patente ingresada es correcta");
+else alert("La patente ingresada no es correcta");
