@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <main class="card-container hide-spiner" id="hide-spiner">
+        <div class="card square-card">
+            <div class="down">
+                <div class="up">
+                    <div class="squeeze">
+                        <div class="rotate-in">
+                            <div class="rotate-out">
+                                <div class="square"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card ball-bouncing">
+            <div class="ball"></div>
+        </div>
+        <div class="card ball-movement">
+            <div class="ball"></div>
+        </div>
+        <div class="card counter"></div>
+    </main>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellat necessitatibus ea sint deleniti odit
+        sas
+        eligendi ullam voluptates sed debitis voluptatem earum accusantium vitae, ex blanditiis maxime est mollitia
+        sequi!</h1>
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        $(window).on('load', function () {
+            $(".hide-spiner").fadeOut(1000);
+            $(".loading-container").fadeOut(1000);
+            $(".l1").fadeOut(1000);
+            $(".l2").fadeOut(1000);
+            $(".l3").fadeOut(1000);
+            $(".l4").fadeOut(1000);
+            $(".content").fadeIn(2000);
+        });
+    </script>
+</body>
+
+</html>
